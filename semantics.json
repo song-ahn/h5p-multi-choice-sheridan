@@ -53,7 +53,12 @@
       "h3",
       "pre",
       "code"
-    ]
+    ],
+    "font": {
+      "size": true,
+      "family": true,
+      "color": true
+    }
   },
   {
     "name": "answers",
