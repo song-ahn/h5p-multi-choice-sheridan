@@ -1,15 +1,15 @@
 {
-  "title": "Multiple Choice (Sheridan)",
+  "title": "Multiple Choice - Sheridan",
   "contentType": "Question",
   "majorVersion": 1,
-  "minorVersion": 0,
+  "minorVersion": 17,
   "patchVersion": 0,
   "runnable": 1,
   "embedTypes": [
     "iframe"
   ],
-  "machineName": "H5P.MultiChoice-Sheridan",
-  "author": "Joubel",
+  "machineName": "H5P.MultiChoiceSheridan",
+  "author": "Joubel, song",
   "license": "MIT",
   "coreApi": {
     "majorVersion": 1,

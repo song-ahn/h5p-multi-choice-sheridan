@@ -47,12 +47,12 @@ var H5P = H5P || {};
  * @param {Options} options
  * @param {number} contentId
  * @param {Object} contentData
- * @returns {H5P.MultiChoice}
+ * @returns {H5P.MultiChoiceSheridan}
  * @constructor
  */
-H5P.MultiChoice = function (options, contentId, contentData) {
-  if (!(this instanceof H5P.MultiChoice))
-    return new H5P.MultiChoice(options, contentId, contentData);
+H5P.MultiChoiceSheridan = function (options, contentId, contentData) {
+  if (!(this instanceof H5P.MultiChoiceSheridan))
+    return new H5P.MultiChoiceSheridan(options, contentId, contentData);
   var self = this;
   this.contentId = contentId;
   this.contentData = contentData;
@@ -1059,9 +1059,9 @@ H5P.MultiChoice = function (options, contentId, contentData) {
     }
   }
 
-  H5P.MultiChoice.counter = (H5P.MultiChoice.counter === undefined ? 0 : H5P.MultiChoice.counter + 1);
+  H5P.MultiChoiceSheridan.counter = (H5P.MultiChoiceSheridan.counter === undefined ? 0 : H5P.MultiChoiceSheridan.counter + 1);
   params.role = (params.behaviour.singleAnswer ? 'radiogroup' : 'group');
-  params.labelId = 'h5p-mcq' + H5P.MultiChoice.counter;
+  params.labelId = 'h5p-mcq' + H5P.MultiChoiceSheridan.counter;
 
   /**
    * Pack the current state of the interactivity into a object that can be
@@ -1101,9 +1101,9 @@ H5P.MultiChoice = function (options, contentId, contentData) {
   };
 
   this.getTitle = function () {
-    return H5P.createTitle((this.contentData && this.contentData.metadata && this.contentData.metadata.title) ? this.contentData.metadata.title : 'Multiple Choice');
+    return H5P.createTitle((this.contentData && this.contentData.metadata && this.contentData.metadata.title) ? this.contentData.metadata.title : 'Multiple Choice - Sheridan');
   };
 };
 
-H5P.MultiChoice.prototype = Object.create(H5P.Question.prototype);
-H5P.MultiChoice.prototype.constructor = H5P.MultiChoice;
+H5P.MultiChoiceSheridan.prototype = Object.create(H5P.Question.prototype);
+H5P.MultiChoiceSheridan.prototype.constructor = H5P.MultiChoiceSheridan;
