@@ -43,7 +43,7 @@
 }
 @font-face {
     font-family:"Lato";
-    src:url("./fonts/Lato-LightItalic.ttf") format("truetype");
+    src:url("../fonts/Lato-LightItalic.ttf") format("truetype");
     font-weight:300; /* 300 */
     font-style:italic;
 }
