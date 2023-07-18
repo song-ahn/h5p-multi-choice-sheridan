@@ -20,5 +20,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Changes
 - Forked from the original v1.16.7
-- Added the font options
+- Added the font options in the RTF edtor
 - Changed the class & type name
+- Changed the default font
